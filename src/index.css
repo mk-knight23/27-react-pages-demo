@@ -1,29 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-accent: #000000;
+}
 
 @layer base {
     body {
-        @apply antialiased bg-[#fdfcfb] text-page font-sans selection:bg-accent selection:text-white;
-    }
-
-    h1,
-    h2,
-    h3 {
-        @apply font-serif;
+        @apply bg-white text-slate-900 antialiased selection:bg-black selection:text-white;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
     }
 }
 
-.magazine-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 2rem;
-}
+@layer components {
+    .editorial-stroke {
+        @apply border-b border-black/10 transition-all hover:border-black;
+    }
 
-.drop-cap::first-letter {
-    @apply float-left text-7xl font-serif font-black mr-3 mt-1 text-accent leading-none;
-}
-
-.editorial-stroke {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:w-16 after:h-px after:bg-black group-hover:after:w-full after:transition-all after:duration-700;
+    .drop-cap::first-letter {
+        @apply float-left text-7xl font-black mr-4 leading-none uppercase font-serif;
+    }
 }

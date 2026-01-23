@@ -154,7 +154,7 @@ export default function App() {
                     <Twitter className="w-4 h-4 cursor-pointer hover:text-black" />
                     <Linkedin className="w-4 h-4 cursor-pointer hover:text-black" />
                 </div>
-                <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400">© 2024 MK_PAGECRAFT_EDITORIAL • 27/30 DISPATCHED</p>
+                <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400">© 2026 PAGECRAFT // EDITORIAL • 27/30 DISPATCHED</p>
                 <div className="flex items-center gap-2 text-sm font-serif italic text-slate-500">
                     Design for the <span className="text-black font-black uppercase not-italic">future</span>
                 </div>
